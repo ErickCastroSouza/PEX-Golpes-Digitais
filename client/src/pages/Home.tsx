@@ -250,9 +250,47 @@ export default function Home() {
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
               Vídeos Falsos feitos por IA (Deepfakes)
             </h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-8">
               Hoje existem tecnologias capazes de criar vídeos extremamente realistas, copiando o rosto e a voz de pessoas famosas ou até de conhecidos. O nome disso é <strong>Deepfake</strong>.
             </p>
+
+            {/* NEW SUBTOPIC: GLOBAL IMPACT */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-4xl mx-auto bg-blue-500/10 border border-blue-500/30 p-8 rounded-3xl mb-16 text-left"
+            >
+              <div className="flex flex-col md:flex-row gap-6 items-start">
+                <div className="p-3 rounded-2xl bg-blue-500/20 text-blue-400 shrink-0">
+                  <AlertOctagon className="w-8 h-8" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white mb-3">O Perigo Além do Dinheiro</h3>
+                  <p className="text-slate-300 leading-relaxed mb-4">
+                    Deepfakes não são usados apenas para roubar dinheiro. Eles são ferramentas poderosas de <strong>manipulação em massa</strong>. 
+                  </p>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-400 text-sm">
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                      Fraudes em Eleições e política
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                      Destruição de reputações
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                      Espalhamento de notícias falsas
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                      Chantagens e extorsão
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
