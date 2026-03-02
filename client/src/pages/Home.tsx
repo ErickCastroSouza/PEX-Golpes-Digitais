@@ -473,7 +473,9 @@ export default function Home() {
           </Card>
           
           <div className="mt-12 text-center text-sm text-slate-400">
-            <p>© {new Date().getFullYear()} Guia de Proteção Digital. Compartilhe conhecimento, não caia em golpes.</p>
+            <p>© {new Date().getFullYear()} Erick de Castro Souza. Guia de Proteção Digital.</p>
+            <p className="mt-2 italic">Este website foi criado como um projeto de extensão para a faculdade de Análise e Desenvolvimento de Sistemas.</p>
+            <p className="mt-1">Compartilhe conhecimento, não caia em golpes.</p>
           </div>
         </div>
       </footer>
