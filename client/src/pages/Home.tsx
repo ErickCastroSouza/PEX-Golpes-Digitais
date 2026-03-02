@@ -415,62 +415,6 @@ export default function Home() {
       {/* 6. CONTACT FOOTER */}
       <footer className="bg-slate-50 border-t border-border py-20">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <h3 className="text-2xl font-bold text-foreground mb-3">Ficou com alguma dúvida?</h3>
-            <p className="text-muted-foreground">Envie sua pergunta de forma anônima ou identificada. Estamos aqui para ajudar a esclarecer como se proteger no mundo digital.</p>
-          </div>
-
-          <Card className="border-border shadow-xl shadow-black/5">
-            <CardContent className="p-6 md:p-8">
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-base">Seu Nome (opcional)</FormLabel>
-                        <FormControl>
-                          <Input 
-                            placeholder="Como prefere ser chamado?" 
-                            className="h-12 text-base px-4 bg-background focus-visible:ring-primary/20" 
-                            {...field} 
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-base font-medium">Sua Mensagem ou Dúvida</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Descreva a situação suspeita ou o que gostaria de saber..." 
-                            className="min-h-[120px] text-base p-4 resize-y bg-background focus-visible:ring-primary/20"
-                            {...field} 
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button 
-                    type="submit" 
-                    disabled={isPending}
-                    className="w-full h-12 text-lg font-semibold hover-elevate active-elevate-2 shadow-md shadow-primary/20"
-                  >
-                    {isPending ? "Enviando..." : (
-                      <>Enviar Dúvida <Send className="ml-2 w-5 h-5" /></>
-                    )}
-                  </Button>
-                </form>
-              </Form>
-            </CardContent>
-          </Card>
           
           <div className="mt-12 text-center text-sm text-slate-400">
             <p>© {new Date().getFullYear()} Erick de Castro Souza. Guia de Proteção Digital.</p>
